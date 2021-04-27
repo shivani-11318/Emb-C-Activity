@@ -1,5 +1,5 @@
 # Embedded C - Activity 1
-# Embedded C Program 
+
 # LED Actuator
 
 ## In Action
