@@ -6,12 +6,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Apr 27 15:25:28 2021
+# Make data base, printed on Tue Apr 27 16:22:07 2021
 
 # Variables
 
-# environment
-VSCODE_GIT_ASKPASS_MAIN = /snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass-main.js
 # 'override' directive
 GNUMAKEFLAGS := 
 # automatic
@@ -22,7 +20,6 @@ GNUMAKEFLAGS :=
 DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
- 
 # makefile (from 'Makefile', line 6)
 SRC = project_main.c
 # environment
@@ -33,8 +30,6 @@ XDG_SESSION_TYPE = x11
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# environment
-IM_CONFIG_PHASE = 2
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -50,9 +45,9 @@ SHELL = /bin/sh
 # environment
 SNAP_DATA = /var/snap/code/62
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+VTE_VERSION = 5202
 # environment
-_ = /snap/code/62/usr/share/code/code
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -66,7 +61,7 @@ MAKEFILE_LIST :=  Makefile
 # makefile (from 'Makefile', line 22)
 FixPath = $1				
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+IM_CONFIG_PHASE = 2
 # environment
 USERNAME = shivani
 # environment
@@ -80,13 +75,13 @@ CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/shivani/Desktop/EmbC
+VSCODE_CWD = /home/shivani/Desktop/Emb-C-Activity1
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/62/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/shivani/.local/bin:/home/shivani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH = /home/shivani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
@@ -119,8 +114,6 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 8522
 # automatic
 %F = $(notdir $%)
 # environment
@@ -138,7 +131,7 @@ XDG_SEAT = seat0
 # environment
 SSH_AGENT_PID = 1688
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
@@ -174,8 +167,6 @@ MAKELEVEL := 0
 # environment
 SNAP_REAL_HOME = /home/shivani
 # environment
-VSCODE_GIT_IPC_HANDLE = /run/user/1000/vscode-git-c0985d8e8b.sock
-# environment
 COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
@@ -186,7 +177,7 @@ QT_IM_MODULE = ibus
 # environment
 SNAP_USER_DATA = /home/shivani/snap/code/62
 # environment
-SHLVL = 2
+SHLVL = 1
 # makefile (from 'Makefile', line 24)
 CC = avr-gcc
 # environment
@@ -194,7 +185,7 @@ GNOME_SHELL_SESSION_MODE = ubuntu
 # makefile (from 'Makefile', line 3)
 BUILD_DIR = Build
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-eb59f804-b02b-46e6-bc5c-0d907216ece2.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b6fd3b91-cce9-4d68-bd12-ba1aa268e57b.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -212,10 +203,7 @@ MAKE_COMMAND := make
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = /home/shivani/.config/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
 # environment
-OLDPWD = /home/shivani/Desktop
-# environment
- 
-TERM_PROGRAM = vscode
+OLDPWD = /home/shivani
 # default
 .VARIABLES := 
 # automatic
@@ -224,10 +212,6 @@ TERM_PROGRAM = vscode
 LANGUAGE = en_IN:en
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-b1ade234-1.55.2-main.sock
-# environment
-VSCODE_GIT_ASKPASS_NODE = /snap/code/62/usr/share/code/code
-# environment
-BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -235,21 +219,15 @@ MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-TERM_PROGRAM_VERSION = 1.55.2
-# environment
 BREAKPAD_DUMP_LOCATION = /home/shivani/.config/Code/exthost Crash Reports
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
-# environment
 QT_ACCESSIBILITY = 1
 # environment
 TEXTDOMAINDIR = /usr/share/locale/
-# environment
-GIT_ASKPASS = /snap/code/62/usr/share/code/resources/app/extensions/git/dist/askpass.sh
 # default
 MAKEFILES := 
 # environment
@@ -266,8 +244,12 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 QT4_IM_MODULE = xim
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/7da99eea_d2a1_4e53_aaf4_3358545d274b
 # automatic
 ^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.584
 # default
 SUFFIXES := 
 # environment
@@ -287,15 +269,16 @@ PROJ_NAME = Act1
 # default
 .RECIPEPREFIX := 
 # environment
-LANG = en_GB.UTF-8
+LANG = en_IN
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 8574
+VSCODE_PID = 14027
 # makefile (from 'Makefile', line 26)
 AVR_OBJ_CPY = avr-objcopy 
 # variable set hash-table stats:
-# Load=141/1024=14%, Rehash=0, Collisions=23/183=13%
+ 
+# Load=133/1024=13%, Rehash=0, Collisions=20/175=11%
 
 # Pattern-specific Variable Values
 
@@ -303,9 +286,9 @@ AVR_OBJ_CPY = avr-objcopy
 
 # Directories
 
-# . (device 2056, inode 3016371): 12 files, no impossibilities.
+# . (device 2056, inode 3018825): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -362,13 +345,13 @@ project_main.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-04-27 15:21:58.548215
+#  Last modified 2021-04-27 16:20:02.693392999
 #  File has been updated.
 #  Successfully updated.
 
 Build:
 #  Implicit rule search has not been done.
-#  Last modified 2021-04-27 15:21:40.496593
+#  Last modified 2021-04-27 16:20:02.693392999
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 39):
@@ -376,7 +359,6 @@ Build:
 
 ELF_TO_HEX:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 41):
@@ -421,12 +403,12 @@ doc:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 183 B / avg = 8 B
-# current buf: size = 8162 B / used = 183 B / count = 22 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 191 B / avg = 8 B
+# current buf: size = 8162 B / used = 191 B / count = 23 / avg = 8 B
 
-# strcache performance: lookups = 42 / hit rate = 47%
+# strcache performance: lookups = 43 / hit rate = 46%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=1/42=2%
-# Finished Make data base on Tue Apr 27 15:25:28 2021
+# Load=23/8192=0%, Rehash=0, Collisions=1/43=2%
+# Finished Make data base on Tue Apr 27 16:22:07 2021
 
  
