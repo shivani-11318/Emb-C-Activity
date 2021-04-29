@@ -1,3 +1,13 @@
+/**
+ * @file Activity3.c
+ * @author 255974 (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
 #define F_CPU 1600000UL
 #include<util/delay.h>
@@ -9,6 +19,7 @@
 
 void initTimer(void){
 
+/*Configuring the registers and ports*/
 TCCR1A|=(1<<COM1A1)|(1<<WGM10)|(1<<WGM11);
 TCCR1B|=(1<<WGM12)|(1<<CS11)|(1<<CS10);
 DDRB|=(1<<PB1);
