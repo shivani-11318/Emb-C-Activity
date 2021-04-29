@@ -1,9 +1,13 @@
-PROJ_NAME = Act1
+PROJ_NAME = Emb_Activity
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = project_main.c
+SRC = project_main.c\
+src/ports.c\
+src/Activity2.c\
+src/Activity3.c\
+src/Activity4.c\
 
 # All header file paths
 INC = -I inc
@@ -37,7 +41,7 @@ all:$(BUILD_DIR)
 $(BUILD_DIR):
 # Create directory to store the built files
 	mkdir $(BUILD_DIR)
-ELF_TO_HEX:
+elf_to_hex:
 	$(AVR_OBJ_CPY) -O ihex $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex) 
 analysis: $(SRC)
 # Analyse the code using Cppcheck command line utility

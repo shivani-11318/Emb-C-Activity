@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Apr 27 16:22:07 2021
+# Make data base, printed on Thu Apr 29 14:55:58 2021
 
 # Variables
 
@@ -21,7 +21,7 @@ DESKTOP_SESSION = ubuntu
 # default
 .SHELLFLAGS := -c
 # makefile (from 'Makefile', line 6)
-SRC = project_main.c
+SRC = project_main.c src/ports.c src/Activity2.c src/Activity3.c src/Activity4.c 
 # environment
 SNAP_COMMON = /var/snap/code/common
 # environment
@@ -39,7 +39,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/shivani/Desktop/Emb-C-Activity1
+CURDIR := /home/shivani/Desktop/Emb-C-Activity
 # makefile
 SHELL = /bin/sh
 # environment
@@ -58,7 +58,7 @@ SNAP_ARCH = amd64
 MAKEFILE_LIST :=  Makefile
 # automatic
 @F = $(notdir $@)
-# makefile (from 'Makefile', line 22)
+# makefile (from 'Makefile', line 26)
 FixPath = $1				
 # environment
 IM_CONFIG_PHASE = 2
@@ -75,7 +75,7 @@ CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/shivani/Desktop/Emb-C-Activity1
+VSCODE_CWD = /home/shivani/Desktop/Emb-C-Activity
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/62/usr/share/glib-2.0/schemas
 # default
@@ -85,7 +85,7 @@ PATH = /home/shivani/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bi
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/shivani-pc:@/tmp/.ICE-unix/1593,unix/shivani-pc:/tmp/.ICE-unix/1593
+SESSION_MANAGER = local/shivani-pc:@/tmp/.ICE-unix/1670,unix/shivani-pc:/tmp/.ICE-unix/1670
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -125,11 +125,11 @@ VSCODE_PIPE_LOGGING = true
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/shivani/Desktop/Emb-C-Activity1
+PWD = /home/shivani/Desktop/Emb-C-Activity
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 1688
+SSH_AGENT_PID = 1765
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -178,14 +178,14 @@ QT_IM_MODULE = ibus
 SNAP_USER_DATA = /home/shivani/snap/code/62
 # environment
 SHLVL = 1
-# makefile (from 'Makefile', line 24)
+# makefile (from 'Makefile', line 28)
 CC = avr-gcc
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # makefile (from 'Makefile', line 3)
 BUILD_DIR = Build
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b6fd3b91-cce9-4d68-bd12-ba1aa268e57b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-31d064c1-f682-4bb3-9e72-9c240426e0d0.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -245,16 +245,16 @@ QT4_IM_MODULE = xim
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/7da99eea_d2a1_4e53_aaf4_3358545d274b
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/346b17da_62e8_44bc_a387_823f669798dd
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.584
+GNOME_TERMINAL_SERVICE = :1.103
 # default
 SUFFIXES := 
 # environment
 SNAP_REEXEC = 
-# makefile (from 'Makefile', line 9)
+# makefile (from 'Makefile', line 13)
 INC = -I inc
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
@@ -265,7 +265,7 @@ WINDOWPATH = 2
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # makefile (from 'Makefile', line 1)
-PROJ_NAME = Act1
+PROJ_NAME = Emb_Activity
 # default
 .RECIPEPREFIX := 
 # environment
@@ -273,11 +273,11 @@ LANG = en_IN
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 14027
-# makefile (from 'Makefile', line 26)
+VSCODE_PID = 5263
+# makefile (from 'Makefile', line 30)
+ 
 AVR_OBJ_CPY = avr-objcopy 
 # variable set hash-table stats:
- 
 # Load=133/1024=13%, Rehash=0, Collisions=20/175=11%
 
 # Pattern-specific Variable Values
@@ -295,6 +295,18 @@ AVR_OBJ_CPY = avr-objcopy
 # No implicit rules.
 
 # Files
+
+# Not a target:
+src/Activity4.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/Activity3.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 all: Build
 #  Phony target (prerequisite of .PHONY).
@@ -322,7 +334,7 @@ all: Build
 # ? := Build
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=3/18=17%
-#  recipe to execute (from 'Makefile', line 35):
+#  recipe to execute (from 'Makefile', line 39):
 	$(CC) -g -Wall -Os -mmcu=atmega328  $(INC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf)
 
 .PHONY: all analysis clean doc
@@ -345,35 +357,41 @@ project_main.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-04-27 16:20:02.693392999
+#  Last modified 2021-04-29 13:15:42.748211152
 #  File has been updated.
 #  Successfully updated.
 
 Build:
 #  Implicit rule search has not been done.
-#  Last modified 2021-04-27 16:20:02.693392999
+#  Last modified 2021-04-29 14:48:09.52050463
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 39):
+#  recipe to execute (from 'Makefile', line 43):
 	mkdir $(BUILD_DIR)
 
-ELF_TO_HEX:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 41):
-	$(AVR_OBJ_CPY) -O ihex $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex) 
-
-analysis: project_main.c
+analysis: project_main.c src/ports.c src/Activity2.c src/Activity3.c src/Activity4.c
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 44):
+#  recipe to execute (from 'Makefile', line 48):
 	cppcheck --enable=all $^
 
 # Not a target:
 .DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+elf_to_hex:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(AVR_OBJ_CPY) -O ihex $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).elf) $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex) 
+
+# Not a target:
+src/Activity2.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -383,32 +401,38 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 52):
+#  recipe to execute (from 'Makefile', line 56):
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
+
+# Not a target:
+src/ports.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 doc:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 48):
+#  recipe to execute (from 'Makefile', line 52):
 	make -C documentation
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/33=0%
+# Load=15/1024=1%, Rehash=0, Collisions=0/41=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 191 B / avg = 8 B
-# current buf: size = 8162 B / used = 191 B / count = 23 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 251 B / avg = 9 B
+# current buf: size = 8162 B / used = 251 B / count = 27 / avg = 9 B
 
-# strcache performance: lookups = 43 / hit rate = 46%
+# strcache performance: lookups = 47 / hit rate = 42%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=1/43=2%
-# Finished Make data base on Tue Apr 27 16:22:07 2021
+# Load=27/8192=0%, Rehash=0, Collisions=1/47=2%
+# Finished Make data base on Thu Apr 29 14:55:58 2021
 
  

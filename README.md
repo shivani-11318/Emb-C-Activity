@@ -1,20 +1,7 @@
-# Embedded C - Activity 1
+# Embedded C - Activities
 
-# LED Actuator
 
-## In Action
 
-### Case1 (0,0)
-![OFF](simulation/Case1.png)
-
-### Case2 (0,1)
-![OFF](simulation/Case2.png)
-
-### Case3 (1,0)
-![OFF](simulation/Case3.png)
-
-### Case4 (1,1)
-![On](simulation/Case4.png)
 
 
 

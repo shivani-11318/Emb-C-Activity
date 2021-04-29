@@ -1,7 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/shivani/Desktop/Emb-C-Activity1'
- 
+make: Entering directory '/home/shivani/Desktop/Emb-C-Activity'
 mkdir Build
-avr-gcc -g -Wall -Os -mmcu=atmega328  -I inc project_main.c -o Build/Act1.elf				
-make: Leaving directory '/home/shivani/Desktop/Emb-C-Activity1'
+avr-gcc -g -Wall -Os -mmcu=atmega328  -I inc project_main.c src/ports.c src/Activity2.c src/Activity3.c src/Activity4.c  -o Build/Emb_Activity.elf				
+make: Leaving directory '/home/shivani/Desktop/Emb-C-Activity'
  
