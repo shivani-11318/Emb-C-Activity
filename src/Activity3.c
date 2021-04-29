@@ -1,5 +1,7 @@
 #include <avr/io.h>
+#define F_CPU 1600000UL
 #include<util/delay.h>
+
 #include "Activity2.h"
 #include "Activity3.h"
 
@@ -7,10 +9,10 @@
 
 void initTimer(void){
 
-TCCR1A|=(1<<COM1A1)|(1<<WGM11)|(1<<WGM10);
+TCCR0A|=(1<<COM0A1)|(1<<WGM00)|(1<<WGM00);
     // Insert code
-TCCR1B|=(1<<CS11)|(1<<CS10)|(1<<WGM12);
-DDRB|=(1<<PB1);
+TCCR0B|=(1<<CS01)|(1<<CS00);
+DDRD|=(1<<PD6);
 
 
 }
@@ -47,7 +49,7 @@ if((output_adc>=0) && (output_adc<=209)){
     }
     else{
         OCR1A = 0;  //0% output
-        data_uart = "0";
+        data_uart = '0';
     }
 return data_uart;
 }
