@@ -21,8 +21,13 @@ int main(void)
       {
 
         PORTB|=(1<<PB0); // LED is on
+
         output_adc = readADC(0); 
+        _delay_ms(200);
+
         data_uart = output_pwm(output_adc);
+        _delay_ms(200);
+        
         writeCharUART(data_uart);
 
 
