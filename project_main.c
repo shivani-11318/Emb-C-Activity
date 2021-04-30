@@ -9,9 +9,16 @@ int main(void)
 {
 
     ports();
+
+    /*Configure ADC registers and pins*/
     initADC();
+
+    /*Configure PWM registers and pins*/
     initTimer();
+
+    /*Configure UART serial communication pin*/
     initUART(103);
+    
     uint16_t volatile output_adc;
     char data_uart;
 
@@ -27,7 +34,7 @@ int main(void)
 
         data_uart = output_pwm(output_adc);
         _delay_ms(200);
-        
+
         writeCharUART(data_uart);
 
 
