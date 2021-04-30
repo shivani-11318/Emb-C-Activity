@@ -26,18 +26,6 @@ void initUART(uint16_t ubrr_value){
 
 }
 
-char readCharUART(){
-
-while(!(UCSR0A & (1<<RXC0))){
-
-}
-
-return UDR0;
-
-}
-
-
-
 
 void writeCharUART(char input_UART){
 

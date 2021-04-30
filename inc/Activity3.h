@@ -14,6 +14,7 @@
 
 char output_pwm(uint16_t output_adc);
 
+
 void initTimer();
 
 #endif

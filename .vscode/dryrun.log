@@ -1,5 +1,5 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/shivani/Desktop/Emb-C-Activity'
-avr-gcc -g -Wall -Os -mmcu=atmega328  -I inc project_main.c src/ports.c src/Activity2.c src/Activity3.c src/Activity4.c  -o Build/Emb_Activity.elf				
+avr-gcc -g -Wall -Os -mmcu=atmega328  -I inc project_main.c src/Activity1.c src/Activity2.c src/Activity3.c src/Activity4.c  -o Build/Emb_Activity.elf				
 make: Leaving directory '/home/shivani/Desktop/Emb-C-Activity'
  

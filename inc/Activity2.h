@@ -12,11 +12,12 @@
 #ifndef __ACTIVITY2_H__
 #define __ACTIVITY2_H__
 
+
 /**
- * @brief defined the port pins that are being used
+ * @brief Initialize ADC 
  * 
  */
-void ports(void);
+void initADC();
 
 /**
  * @brief reads the analog input and returning a digital 8bit value
@@ -26,6 +27,6 @@ void ports(void);
  */
 uint16_t readADC(uint8_t ch);
 
-void initADC();
+
 
 #endif

@@ -12,9 +12,20 @@
 #ifndef __ACTIVITY4_H__
 #define __ACTIVITY4_H
 
+/**
+ * @brief initialize usart
+ * 
+ * @param ubrr_value 
+ */
 void initUART(uint16_t ubrr_value);
 
-char readCharUART();
+
+
+/**
+ * @brief write to usart
+ * 
+ * @param input_UART
+ */
 
 void writeCharUART(char input_UART);
 
