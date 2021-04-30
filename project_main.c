@@ -8,8 +8,8 @@
 int main(void)
 {
 
-    initADC();
     ports();
+    initADC();
     initTimer();
     initUART(103);
     uint16_t output_adc;
