@@ -12,7 +12,7 @@ int main(void)
     initADC();
     initTimer();
     initUART(103);
-    uint16_t output_adc;
+    uint16_t volatile output_adc;
     char data_uart;
 
     while(1)
