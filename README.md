@@ -22,6 +22,8 @@
 
 ## Activity 4
 
+![](simulation/UART3.png)
+
 ![](simulation/UART1.png)
 
 ![](simulation/UART2.png)
