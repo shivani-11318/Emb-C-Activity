@@ -1,7 +1,7 @@
 /**
  * @file Activity2.c
  * @author 255974 (you@domain.com)
- * @brief 
+ * @brief ADC
  * @version 0.1
  * @date 2021-04-29
  * 

@@ -1,3 +1,14 @@
+/**
+ * @file Activity1.c
+ * @author 255974 (you@domain.com)
+ * @brief LED PORTS
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <avr/io.h>
 #define F_CPU 1600000UL
 #include <util/delay.h>
